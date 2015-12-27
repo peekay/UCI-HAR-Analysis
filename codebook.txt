@@ -1,0 +1,220 @@
+The uci_har_analysis.txt output file contains average variable values for each subject and activity, summarized from the original UCI HAR dataset.  Only the "mean" and "standard deviation" variables are processed.  The variables are described below.
+
+Note: the UCI HAR dataset values are normalized within [-1, 1]
+
+"subject"
+	- Identifies the subject performing the activity. 
+	- Unit: id (0-30)
+
+"activity"                  
+	- The activity performed by the subject.  
+	- Unit: string enumeration, one of:
+			WALKING
+			WALKING_UPSTAIRS
+			WALKING_DOWNSTAIRS
+			SITTING
+			STANDING
+			LAYING     
+
+"tBodyAcc-mean()-X"               
+"tBodyAcc-mean()-Y"              
+"tBodyAcc-mean()-Z" 
+	- Body Acceleration mean in the X, Y, and Z directions.  
+	- Unit: m/s^2
+
+"tBodyAcc-std()-X"               
+"tBodyAcc-std()-Y"                
+"tBodyAcc-std()-Z"               
+	- Body Acceleration standard deviation in the X, Y, and Z directions.  
+	- Unit: sd
+
+"tGravityAcc-mean()-X"            
+"tGravityAcc-mean()-Y"           
+"tGravityAcc-mean()-Z"     
+	- Gravity Acceleration mean in the X, Y and Z direction.  
+	- Unit: m/s^2
+
+"tGravityAcc-std()-X"            
+"tGravityAcc-std()-Y"             
+"tGravityAcc-std()-Z"   
+	- Gravity Accelartion standard deviation in the X, Y, and Z directions.
+	- Unit: m/s^2
+
+"tBodyAccJerk-mean()-X"           
+"tBodyAccJerk-mean()-Y"          
+"tBodyAccJerk-mean()-Z"  
+	- Body Acceleration Jerk mean in the X, Y, and Z directions.
+	- Unit: m/s^3
+
+"tBodyAccJerk-std()-X"           
+"tBodyAccJerk-std()-Y"            
+"tBodyAccJerk-std()-Z" 
+	- Body Acceleration standard deviation in the X, Y, and Z directions.
+	- Unit: sd
+
+"tBodyGyro-mean()-X"              
+"tBodyGyro-mean()-Y"             
+"tBodyGyro-mean()-Z"     
+	- Body Angular velocity mean in the X, Y and Z directions.
+	- Unit: rad/s
+
+"tBodyGyro-std()-X"              
+"tBodyGyro-std()-Y"               
+"tBodyGyro-std()-Z" 
+	- Body Angular velocity standard deviation in the X, Y and Z directions.
+	- Unit: sd
+
+"tBodyGyroJerk-mean()-X"          
+"tBodyGyroJerk-mean()-Y"         
+"tBodyGyroJerk-mean()-Z"          
+	- Body Angular Jerk in the X, Y and Z directions.
+	- Unit: rad/s^3
+
+"tBodyGyroJerk-std()-X"          
+"tBodyGyroJerk-std()-Y"           
+"tBodyGyroJerk-std()-Z"
+	- Body Angular Jerk standard deviation in the X, Y and Z directions.
+	- Unit: sd
+
+"tBodyAccMag-mean()"  
+	- Body Acceleration Magnitude mean
+	- Unit: m/s^2
+
+"tBodyAccMag-std()"      
+	- Body Acceleration Magnitude standard deviation
+	- Unit: sd
+
+"tGravityAccMag-mean()"          
+ 	- Gravity Acceleration Magnitude mean
+	- Unit: m/s^2
+
+"tGravityAccMag-std()"   
+	- Gravity Acceleration Magnitude standard deviation
+	- Unit: sd
+
+"tBodyAccJerkMag-mean()"   
+	- Body Acceleration Jerk Magnitude mean
+	- Unit: m/s^3
+
+"tBodyAccJerkMag-std()"          
+	- Body Acceleration Jerk Magnitude standard deviation
+	- Unit: sd
+
+"tBodyGyroMag-mean()" 
+	- Body Angular Velocity Magnitude mean
+	- Unit: rad/s
+
+"tBodyGyroMag-std()"  
+	- Body Angular Velocity Magnitude standard deviation
+	- Unit: sd
+
+"tBodyGyroJerkMag-mean()"   
+	- Body Angular Jerk Magnitude mean   
+	- Unit: rad/s^3
+
+"tBodyGyroJerkMag-std()"  
+	- Body Angular Jerk Magnitude standard deviation
+	- Unit: sd
+
+"fBodyAcc-mean()-X"               
+"fBodyAcc-mean()-Y"              
+"fBodyAcc-mean()-Z"          
+	- FFT of Body Acceleration mean in the X, Y, and Z directions.  
+	- Unit: m/s^2
+
+"fBodyAcc-std()-X"               
+"fBodyAcc-std()-Y"                
+"fBodyAcc-std()-Z"    
+	- FFT of Body Acceleration standard deviation in the X, Y, and Z directions.  
+	- Unit: sd
+
+"fBodyAcc-meanFreq()-X"           
+"fBodyAcc-meanFreq()-Y"          
+"fBodyAcc-meanFreq()-Z"  
+	- FFT mean frequency in the X, Y and Z directions.
+	- Unit: hz
+
+"fBodyAccJerk-mean()-X"          
+"fBodyAccJerk-mean()-Y"           
+"fBodyAccJerk-mean()-Z"  
+	- FFT of Body Acceleration Jerk mean in the X, Y, and Z directions.
+	- Unit: m/s^3
+
+
+"fBodyAccJerk-std()-X"            
+"fBodyAccJerk-std()-Y"           
+"fBodyAccJerk-std()-Z" 
+	- FFT of Body Acceleration Jerk standard deviation in the X, Y, and Z directions.
+	- Unit: sd 
+
+"fBodyAccJerk-meanFreq()-X"      
+"fBodyAccJerk-meanFreq()-Y"       
+"fBodyAccJerk-meanFreq()-Z"  
+	- FFT of Acceleration Jerk mean frequency
+	- Unit: hz
+
+"fBodyGyro-mean()-X"              
+"fBodyGyro-mean()-Y"             
+"fBodyGyro-mean()-Z"   
+	- FFT of gyro mean in the X, Y and Z directions
+	- Unit: rad/s
+
+"fBodyGyro-std()-X"              
+"fBodyGyro-std()-Y"               
+"fBodyGyro-std()-Z"    
+	- FFT of gyro standard deviation in the X, Y and Z directions
+	- Unit: sd
+
+"fBodyGyro-meanFreq()-X"          
+"fBodyGyro-meanFreq()-Y"         
+"fBodyGyro-meanFreq()-Z"   
+	- FFT of gyro mean frequency in the X, Y and Z directions
+	- Unit: hz
+
+"fBodyAccMag-mean()"   
+	- FFT of the Body Acceleration Magnitude mean
+	- Unit: m/s^2
+
+"fBodyAccMag-std()" 
+	- FFT of the Body Acceleration Magnitude standard deviation
+	- Unit: sd
+
+"fBodyAccMag-meanFreq()"    
+	- FFT of teh Body Acceleration Magnitude mean frequency
+	- Unit: hz
+
+"fBodyBodyAccJerkMag-mean()"  
+	- FFT of the Body Acceleration Jerk Magnitude mean
+	- Unit: m/s^3
+
+"fBodyBodyAccJerkMag-std()"  
+	- FFT of the Body Acceleration Jerk Magnitude standard deviation
+	- Unit: sd    
+
+"fBodyBodyAccJerkMag-meanFreq()"  
+	- FFT of the Body Acceleration Jerk Magnitude mean frequency
+	- Unit: hz
+
+"fBodyBodyGyroMag-mean()"      
+	- FFT of the Body Angular velocity Magnitude mean
+	- Unit: rad/s
+
+"fBodyBodyGyroMag-std()"    
+	- FFT of the Body Angular velocity Magnitude standard deviation
+	- Unit: sd
+
+"fBodyBodyGyroMag-meanFreq()"  
+	- FFT of the Body Angular velocity Magnitude mean frequency
+	- Unit: hz
+
+"fBodyBodyGyroJerkMag-mean()" 
+	- FFT of the Body Angular velocity Jerk Magnitude mean
+	- Unit: rad/s^3   
+
+"fBodyBodyGyroJerkMag-std()" 
+	- FFT of the Body Angular velocity Jerk Magnitude standard deviation
+	- Unit: sd       
+
+"fBodyBodyGyroJerkMag-meanFreq()"
+	- FFT of the Body Angular velocity Jerk Magnitude mean frequency
+	- Unit: hz    
